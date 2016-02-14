@@ -16,7 +16,9 @@
   * ```DEBUG=<application name>:* npm start```
   * In chrome navigate to http://localhost:3000/ to verify its working
   * Close tab in Chrome and Ctrl+C to stop the local server
-1. 
+1. Add libraries for testing as dev dependancies ```npm install --save-dev supertest mocha chai```
+
+[This Stack Overflow question has answers with lots of helps](http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js)
 
 ### [Sublime Text](https://www.sublimetext.com/)
 
@@ -39,7 +41,6 @@ To enable LiveReload on Sublime start:
   ]
 }
 ```
-
 
 #### Add shortcut key in Sublime to preview markdown (`Alt+M`).
 Add keybinding. On Sublime Menu -> Preferences -> Key Bindings - User
