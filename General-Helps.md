@@ -21,6 +21,7 @@
 [This Stack Overflow question has answers with lots of helps](http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js)
 
 ### [Sublime Text](https://www.sublimetext.com/)
+Add Jade highlighting [Package Control can be used](https://github.com/davidrios/jade-tmbundle#using-package-control-in-sublime-text-23)
 
 ### [Markdown guide](https://guides.github.com/features/mastering-markdown/) :sparkles: :camel: :boom:
 
