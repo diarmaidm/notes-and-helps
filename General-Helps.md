@@ -11,21 +11,35 @@
 ###### In the following steps **replace** `<work directory>` and `<application name>` with the actual names
 1. Navigate to the work directory ```cd <work directory>```
 1. Create the new application ```express <application name>```
-1. run the 2 commands from end of previous step 
+1. ssRun the 2 commands from end of previous step
   * ```cd <application name> && npm install```
   * ```DEBUG=<application name>:* npm start```
+  * In chrome navigate to http://localhost:3000/ to verify its working
+  * Close tab in Chrome and Ctrl+C to stop the local server
+1. 
 
 ### [Sublime Text](https://www.sublimetext.com/)
 
 ### [Markdown guide](https://guides.github.com/features/mastering-markdown/) :sparkles: :camel: :boom:
 
 ### Markdown editing and preview using Sublime Text
+Guide - http://www.ryanthaut.com/guides/sublime-text-3-markdown-and-live-reload/ 
+
 Follow instructions to install Package Control https://packagecontrol.io/installation#st3 
 Install using Package Control https://packagecontrol.io/packages/Markdown%20Preview
 
 In Sublime Shift+Ctrl+P -> Package Control: Install Package -> LiveReload
+To enable LiveReload on Sublime start: 
+  On Sublime Menu -> `Preferences -> Package Settings -> LiveReload -> Settings - User` add the following:
+```
+{ 
+  "enabled_plugins": [ 
+    "SimpleReloadPlugin", 
+    "SimpleRefresh" 
+  ]
+}
+```
 
-Guide - http://www.ryanthaut.com/guides/sublime-text-3-markdown-and-live-reload/ 
 
 #### Add shortcut key in Sublime to preview markdown (`Alt+M`).
 Add keybinding. On Sublime Menu -> Preferences -> Key Bindings - User
