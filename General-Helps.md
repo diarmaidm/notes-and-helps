@@ -1,8 +1,11 @@
 # Notes and helps:
 
+### Install node.js
+See http://nodejs.org for various methods to install.
+  1. You can install using package manager https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+  1. You can use nvm for multiple node versions https://github.com/creationix/nvm#install-script
+    
 ### Prepare environment before creating a new node.js application
-1. Install node.js if it is not already installed. ```node -v``` will check the version.
-  * Use nvm for multiple versions https://github.com/creationix/nvm#install-script
 1. Install express globally ```npm install -g express```
 1. Install express application generator globally ```npm install -g express-generator```
 1. Install bower globally ```npm install -g bower```
