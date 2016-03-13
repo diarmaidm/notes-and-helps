@@ -24,6 +24,24 @@ See http://nodejs.org for various methods to install.
 [This Stack Overflow question has answers with lots of helps](http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js)
 
 ### [Sublime Text](https://www.sublimetext.com/)
+A sample user preferences/setting to override defaults:
+```
+{
+  // The number of spaces a tab is considered equal to
+  "tab_size": 2,
+  // Set to true to insert spaces when tab is pressed
+  "translate_tabs_to_spaces": true,
+  // Set to true to removing trailing white space on save
+  "trim_trailing_white_space_on_save": true,
+  // Makes tabs with modified files more visible
+  "highlight_modified_tabs": true,
+  // Show folders in the side bar in bold
+  "bold_folder_labels": true,
+  // Preview file contents when clicking on a file in the side bar. Double clicking or editing the preview will open the file and assign it a tab.
+  // set this to false if want to turn off...
+  "preview_on_click": true
+}
+```
 Add Jade highlighting [Package Control can be used](https://github.com/davidrios/jade-tmbundle#using-package-control-in-sublime-text-23)
 
 ### [Markdown guide](https://guides.github.com/features/mastering-markdown/) :sparkles: :camel: :boom:
