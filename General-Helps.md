@@ -71,3 +71,19 @@ Add keybinding. On Sublime Menu -> Preferences -> Key Bindings - User
   { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} }
 ]
 ```
+
+### IntelliJ IDEA
+Preferences (or Settings)->Editor->General->Appearance
+
+### Git helps
+List global config ` git config --global -l`
+Set email `git config --global user.email "diarmaidm@users.noreply.github.com"`
+Stop warning message `git config --global push.default simple`
+Set color git messages `git config --global color.ui auto`
+
+### General linux and bash helps
+change `.bashrc` to change prompt `PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\][\w]\[\033[34m\] \$ \[\033[00m\]'`
+
+to make terminal prompt git aware https://github.com/jimeh/git-aware-prompt
+
+having to press key twice to get backtick `xmodmap -e 'keycode 49 = grave asciitilde'` from http://ubuntuforums.org/showthread.php?t=1332160
