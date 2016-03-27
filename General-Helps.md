@@ -4,7 +4,7 @@
 See http://nodejs.org for various methods to install.
   1. You can install using package manager https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
   1. You can use nvm for multiple node versions https://github.com/creationix/nvm#install-script
-    
+
 ### Prepare environment before creating a new node.js application
 1. Install express globally ```npm install -g express```
 1. Install express application generator globally ```npm install -g express-generator```
@@ -47,19 +47,19 @@ Add Jade highlighting [Package Control can be used](https://github.com/davidrios
 ### [Markdown guide](https://guides.github.com/features/mastering-markdown/) :sparkles: :camel: :boom:
 
 ### Markdown editing and preview using Sublime Text
-Guide - http://www.ryanthaut.com/guides/sublime-text-3-markdown-and-live-reload/ 
+Guide - http://www.ryanthaut.com/guides/sublime-text-3-markdown-and-live-reload/
 
-Follow instructions to install Package Control https://packagecontrol.io/installation#st3 
+Follow instructions to install Package Control https://packagecontrol.io/installation#st3
 Install using Package Control https://packagecontrol.io/packages/Markdown%20Preview
 
 In Sublime Shift+Ctrl+P -> Package Control: Install Package -> LiveReload
-To enable LiveReload on Sublime start: 
+To enable LiveReload on Sublime start:
   On Sublime Menu -> `Preferences -> Package Settings -> LiveReload -> Settings - User` add the following:
 ```
-{ 
-  "enabled_plugins": [ 
-    "SimpleReloadPlugin", 
-    "SimpleRefresh" 
+{
+  "enabled_plugins": [
+    "SimpleReloadPlugin",
+    "SimpleRefresh"
   ]
 }
 ```
@@ -87,3 +87,51 @@ change `.bashrc` to change prompt `PS1='${debian_chroot:+($debian_chroot)}\[\033
 to make terminal prompt git aware https://github.com/jimeh/git-aware-prompt
 
 having to press key twice to get backtick `xmodmap -e 'keycode 49 = grave asciitilde'` from http://ubuntuforums.org/showthread.php?t=1332160
+
+**Capture** part of a screen `scrot -s` - file is saved in home directory.
+
+Lubuntu keyboard map https://help.ubuntu.com/community/Lubuntu/Keyboard
+
+
+### General npm and node helps
+
+Trends
+1. http://www.npmtrends.com/mocha-vs-chai-vs-jasmine
+1. http://www.npmtrends.com/react-vs-angular
+1. http://www.npmtrends.com/gulp-vs-grunt
+
+
+### Visual Studio Code (on Linux)
+1. Download from https://code.visualstudio.com/
+1. Follow instructions to install/setup https://code.visualstudio.com/Docs/editor/setup
+If you get the follwoing message when starting from the command line
+```
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+```
+remove the symbolic link (if you created 1) and add the following to .bashrc as per http://askubuntu.com/questions/636621/vscode-error-when-launched-from-terminal
+```
+function __code {
+   if [ "$@x" != 'x' ]; then
+      (~/path/to/Code "$@" &) &> /dev/null
+   else
+      (~/path/to/Code &) &> /dev/null
+   fi
+}
+alias code='__code'
+```
+
+#### Editor Preferences
+
+File -> Preferences -> User Settings (opens settings.json).
+  These are some of the useful settings. You can copy from `Default Settings`
+```
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "onFocusChange"
+```
+
+#### Extensions
+
+https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+
