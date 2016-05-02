@@ -1,3 +1,4 @@
+[Back to README](README.md)
 ### Visual Studio Code (on Linux)
 1. Download from https://code.visualstudio.com/
 1. Follow instructions to install/setup https://code.visualstudio.com/Docs/editor/setup
