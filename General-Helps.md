@@ -142,3 +142,40 @@ File -> Preferences -> User Settings (opens settings.json).
 
 https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 
+#### Change file manager in Ubuntu (to Nemo - Only use for Ubuntu):
+http://www.webupd8.org/2013/10/install-nemo-with-unity-patches-and.html
+(I got link from http://artfulrobot.uk/blog/whats-best-file-manager-ubuntu-gnome-1404-trusty)
+
+Copied from link above - check link as things will change:
+```
+sudo add-apt-repository ppa:webupd8team/nemo
+sudo apt-get update
+sudo apt-get install nemo nemo-fileroller
+```
+
+To prevent Nautilus from handling the desktop icons (and use Nemo instead), use the command below:
+```
+gsettings set org.gnome.desktop.background show-desktop-icons false
+```
+Set Nemo as the default file manager (replacing Nautilus) by running the following command
+```
+xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+```
+
+#### Make terminal do partial match previous commands on up and down arrow.
+http://askubuntu.com/questions/59846/bash-history-search-partial-up-arrow
+
+Update (or create) `~/.inputrc` with:
+```
+## arrow up
+"\e[A":history-search-backward
+## arrow down
+"\e[B":history-search-forward
+```
+
+
+### Errors, gotchas etc...
+Investigate:
+```
+Failed to fetch http://dl.google.com/linux/chrome/deb/dists/stable/Release  Unable to find expected entry 'main/binary-i386/Packages' in Release file (Wrong sources.list entry or malformed file)
+```
