@@ -2,7 +2,17 @@
 ### General linux and bash helps.
 <hr>
 #### Change terminal prompt.
-change `.bashrc` to change prompt `PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\][\w]\[\033[34m\] \$ \[\033[00m\]'`
+Edit `.bashrc`
+
+change prompt `PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\][\w]\[\033[34m\] \$ \[\033[00m\]'`
+
+**Git aware prompt** https://gist.github.com/bjornkri/4025270
+```
+. ~/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+```
+
+`PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[01;34m\]\w\[\033[0;32m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '`
 
 to make terminal prompt git aware https://github.com/jimeh/git-aware-prompt
 
