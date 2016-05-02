@@ -18,7 +18,7 @@ sudo tar -C /usr/local --strip-components 1 -xzf node-v4.4.2-linux-x64.tar.gz
 1. Install bower globally ```npm install -g bower```
 
 ### Create a new node.js express application
-###### In the following steps **replace** `<work directory>` and `<application name>` with the actual names
+#### In the following steps **replace** `<work directory>` and `<application name>` with the actual names
 1. Navigate to the work directory ```cd <work directory>```
 1. Create the new application ```express <application name>```
 1. ssRun the 2 commands from end of previous step
