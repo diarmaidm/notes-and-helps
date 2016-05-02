@@ -88,18 +88,6 @@ Set email `git config --global user.email "diarmaidm@users.noreply.github.com"`
 Stop warning message `git config --global push.default simple`
 Set color git messages `git config --global color.ui auto`
 
-### General linux and bash helps
-change `.bashrc` to change prompt `PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\[\033[00m\]\[\033[01;34m\][\w]\[\033[34m\] \$ \[\033[00m\]'`
-
-to make terminal prompt git aware https://github.com/jimeh/git-aware-prompt
-
-having to press key twice to get backtick `xmodmap -e 'keycode 49 = grave asciitilde'` from http://ubuntuforums.org/showthread.php?t=1332160
-
-**Capture** part of a screen `scrot -s` - file is saved in home directory.
-
-Lubuntu keyboard map https://help.ubuntu.com/community/Lubuntu/Keyboard
-
-
 ### General npm and node helps
 
 Trends
@@ -142,40 +130,3 @@ File -> Preferences -> User Settings (opens settings.json).
 
 https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 
-#### Change file manager in Ubuntu (to Nemo - Only use for Ubuntu):
-http://www.webupd8.org/2013/10/install-nemo-with-unity-patches-and.html
-(I got link from http://artfulrobot.uk/blog/whats-best-file-manager-ubuntu-gnome-1404-trusty)
-
-Copied from link above - check link as things will change:
-```
-sudo add-apt-repository ppa:webupd8team/nemo
-sudo apt-get update
-sudo apt-get install nemo nemo-fileroller
-```
-
-To prevent Nautilus from handling the desktop icons (and use Nemo instead), use the command below:
-```
-gsettings set org.gnome.desktop.background show-desktop-icons false
-```
-Set Nemo as the default file manager (replacing Nautilus) by running the following command
-```
-xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
-```
-
-#### Make terminal do partial match previous commands on up and down arrow.
-http://askubuntu.com/questions/59846/bash-history-search-partial-up-arrow
-
-Update (or create) `~/.inputrc` with:
-```
-## arrow up
-"\e[A":history-search-backward
-## arrow down
-"\e[B":history-search-forward
-```
-
-
-### Errors, gotchas etc...
-Investigate:
-```
-Failed to fetch http://dl.google.com/linux/chrome/deb/dists/stable/Release  Unable to find expected entry 'main/binary-i386/Packages' in Release file (Wrong sources.list entry or malformed file)
-```
