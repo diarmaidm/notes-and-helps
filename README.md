@@ -5,6 +5,6 @@ This is a general repository to hold some notes, helps and scribbles etc.
 
 [Gulp and Grunt](Gulp-and-Grunt.md)
 
-[soap-add](soap-add)
+[soap-add](https://github.com/diarmaidm/soap-add)
 
 
