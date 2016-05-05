@@ -25,7 +25,7 @@ sudo tar -C /usr/local --strip-components 1 -xzf node-v4.4.2-linux-x64.tar.gz
 #### In the following steps **replace** `<work directory>` and `<application name>` with the actual names
 1. Navigate to the work directory ```cd <work directory>```
 1. Create the new application ```express <application name>```
-1. ssRun the 2 commands from end of previous step
+1. Run the 2 commands from end of previous step
   * ```cd <application name> && npm install```
   * ```DEBUG=<application name>:* npm start```
   * In chrome navigate to http://localhost:3000/ to verify its working
@@ -41,4 +41,3 @@ Trends:
 **Note: Angular is a framework whereas react is a library.**
 1. http://www.npmtrends.com/backbone-vs-angular-vs-react **Backbone vs Angular. React included for reference.**
 1. http://www.npmtrends.com/gulp-vs-grunt
-

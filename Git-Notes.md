@@ -1,5 +1,28 @@
 [Back to README](README.md)
 ### Git
+
+#### New repo from a local new application
+From https://help.github.com/articles/adding-a-remote/
+
+Initialise local as a git repository `git init`
+
+`git remote add origin https://github.com/<username>/<repo-name>.git`
+
+verify `git remote -v`
+
+when you `git push` you will get an error something like:
+```
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+```
+Execute the provided command `git push --set-upstream origin master`
+
+It will give an error. Create new remote repository (empty)
+
+Push the code to github.
+
 #### General Notes
 * https://git-scm.com
 * https://git-scm.com/documentation
