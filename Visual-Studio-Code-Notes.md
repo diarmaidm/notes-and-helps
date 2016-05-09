@@ -32,3 +32,6 @@ File -> Preferences -> User Settings (opens settings.json).
 #### Extensions
 
 https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+
+#### Keyboard shortcuts.
+"ctrl+shift+k" Delete Line
