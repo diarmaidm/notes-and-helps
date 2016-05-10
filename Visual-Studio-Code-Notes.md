@@ -1,5 +1,5 @@
 [Back to README](README.md)
-### Visual Studio Code (on Linux)
+#### Visual Studio Code (on Linux)
 1. Download from https://code.visualstudio.com/
 1. Follow instructions to install/setup https://code.visualstudio.com/Docs/editor/setup
 If you get the follwoing message when starting from the command line
@@ -22,15 +22,19 @@ alias code='__code'
 #### Editor Preferences
 
 File -> Preferences -> User Settings (opens settings.json).
-  These are some of the useful settings. You can copy from `Default Settings`
+  These are some of the useful settings. (You can use `Default Settings` for reference).
 ```
-    "editor.tabSize": 2,
-    "files.trimTrailingWhitespace": true,
-    "files.autoSave": "onFocusChange"
+{
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "explorer.workingFiles.maxVisible": 5,
+  "explorer.workingFiles.dynamicHeight": false
+}
 ```
 
 #### Extensions
-
 https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 
 #### Keyboard shortcuts.
