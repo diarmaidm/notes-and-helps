@@ -23,6 +23,8 @@ It will give an error. Create new remote repository (empty)
 
 Push the code to github.
 
+<hr>
+
 #### General Notes
 * https://git-scm.com
 * https://git-scm.com/documentation
@@ -64,3 +66,71 @@ git remote -v
 #### Syncing a fork:
 
 https://help.github.com/articles/syncing-a-fork/
+
+#### undoing changes
+https://www.atlassian.com/git/tutorials/undoing-changes/git-clean
+
+#### From github for developers training
+Some commands used:
+```
+git --version
+ls
+mkdir scratch
+cd scratch/
+git --version
+git clone https://github.com/githubteacher/developers-july-PM.git
+git --version
+git config
+git config list
+git confif ls -al
+git config ls -al
+git config --list
+git config --global core.autocrlf input
+git config --list
+git config --global push.default simple
+git config --list
+cd developers-july-PM/
+git branch
+git branch --all
+git checkout <BRANCH_NAME>
+git branch
+code <FILE_NAME>.md
+git st
+git status
+git add <FILE_NAME>.md
+git status
+git commit
+git status
+git add <FILE_NAME>.md
+git status
+git commit
+git status
+git log
+git push
+git log
+git status
+code .
+git checkout master
+git branch --all
+git branch --all | wc
+git pull --prune
+git branch --all | wc
+git pull --prune
+git branch --all | wc
+git branch -d <BRANCH_NAME>
+git branch --merged
+git log
+git log --oneline
+git log --oneline --graph
+git log --oneline --graph --decorate
+git log --oneline --graph --decorate -- all
+git config --global alias.lol "log --oneline --decorate --all"
+git lol
+git config --global alias.lol "log --oneline --decorate --graph --all"
+git lol
+git config --global alias.st "status"
+git st
+```
+Create a task list use:
+- [ ] TASKNAME
+
