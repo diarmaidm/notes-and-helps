@@ -81,3 +81,12 @@ SEARCHING in man pages (press "`h`" when viewing man page for complete help)
   ESC-u                Undo (toggle) search highlighting.
   &pattern          *  Display only matching lines
 ```
+#### Disk and storage
+```
+sudo lshw -C disk -class storage
+sudo lshw -businfo
+```
+##### Check USB (in this case is /dev/sdc1)
+```
+sudo dosfsck -w -r -l -a -v -t /dev/sdc1
+```
