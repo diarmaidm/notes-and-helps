@@ -16,6 +16,11 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 
 to make terminal prompt git aware https://github.com/jimeh/git-aware-prompt
 
+#### Additional info from git essentials
+Link to comment in chat https://gitter.im/githubteacher/essentials-aug?at=57aca86d16b0696856ad456d
+Link provided - https://gist.github.com/githubteacher/e75edf29d76571f8cc6c
+
+#### Fix backtick
 having to press key twice to get backtick `xmodmap -e 'keycode 49 = grave asciitilde'` from http://ubuntuforums.org/showthread.php?t=1332160
 
 <hr>
