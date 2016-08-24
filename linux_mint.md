@@ -40,3 +40,9 @@ npm -v  ## Returned 3.10.3
 node -v ## Returned v6.4.0
 
 ```
+
+#### Install traceroute
+`sudo apt install traceroute`
+
+#### Partial command line match previous commands.
+https://github.com/diarmaidm/Notes-and-Helps/blob/master/linux_notes.md#make-terminal-do-partial-match-previous-commands-on-up-and-down-arrow
