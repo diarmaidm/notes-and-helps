@@ -37,6 +37,13 @@ Stop warning message `git config --global push.default simple`
 
 Set color git messages `git config --global color.ui auto`
 
+Cache credentials https://help.github.com/articles/caching-your-github-password-in-git/
+```
+git config --global credential.helper cache
+# Set git to use the credential memory cache
+git config --global credential.helper 'cache --timeout=7200'
+# Set the cache to timeout after 2 hours (setting is in seconds)
+```
 <hr>
 #### Fork and track a repo
 https://help.github.com/articles/fork-a-repo/
