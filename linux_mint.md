@@ -25,6 +25,8 @@ to
 ```
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\w \$\[\033[00m\] '` in `subl $HOME .bashrc
 ```
+#### Partial command line match previous commands.
+Instructions provided in [Linux Notes](https://github.com/diarmaidm/Notes-and-Helps/blob/master/linux_notes.md#make-terminal-do-partial-match-previous-commands-on-up-and-down-arrow)
 
 #### Downloaded and install [atom](https://atom.io/).
 See [Atom_notes.md](atom_notes.md)
@@ -43,6 +45,3 @@ node -v ## Returned v6.4.0
 
 #### Install traceroute
 `sudo apt install traceroute`
-
-#### Partial command line match previous commands.
-https://github.com/diarmaidm/Notes-and-Helps/blob/master/linux_notes.md#make-terminal-do-partial-match-previous-commands-on-up-and-down-arrow
