@@ -43,5 +43,11 @@ node -v ## Returned v6.4.0
 
 ```
 
+#### How to install Oracle JDK on Linux Mint
+Instructions https://community.linuxmint.com/tutorial/view/1372
+
+#### Howto install Oracle (Sun) Java JRE for Linux Mint
+Instructions https://community.linuxmint.com/tutorial/view/1091
+
 #### Install traceroute
 `sudo apt install traceroute`
