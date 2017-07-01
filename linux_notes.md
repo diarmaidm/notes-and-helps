@@ -1,6 +1,8 @@
 [Back to README](README.md)
 ### General linux and bash helps.
+
 <hr>
+
 #### Change terminal prompt.
 Edit `.bashrc`
 
@@ -24,6 +26,7 @@ Link provided - https://gist.github.com/githubteacher/e75edf29d76571f8cc6c
 having to press key twice to get backtick `xmodmap -e 'keycode 49 = grave asciitilde'` from http://ubuntuforums.org/showthread.php?t=1332160
 
 <hr>
+
 #### Change file manager in Ubuntu (to Nemo - Only use for Ubuntu):
 http://www.webupd8.org/2013/10/install-nemo-with-unity-patches-and.html
 (I got link from http://artfulrobot.uk/blog/whats-best-file-manager-ubuntu-gnome-1404-trusty)
@@ -45,11 +48,13 @@ xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 ```
 
 <hr>
+
 #### Format USB
 * http://www.wikihow.com/Format-a-USB-Flash-Drive-in-Ubuntu
 * http://askubuntu.com/questions/198065/how-to-format-a-usb-drive
 
 <hr>
+
 #### Make terminal do partial match previous commands on up and down arrow.
 http://askubuntu.com/questions/59846/bash-history-search-partial-up-arrow
 
@@ -62,6 +67,7 @@ Update (or create) `~/.inputrc` with:
 ```
 
 <hr>
+
 ### Errors, gotchas etc...
 Investigate:
 ```
@@ -69,12 +75,14 @@ Failed to fetch http://dl.google.com/linux/chrome/deb/dists/stable/Release  Unab
 ```
 
 <hr>
+
 #### Screen capture.
 **Capture** part of a screen `scrot -s` - file is saved in home directory.
 
 Lubuntu keyboard map https://help.ubuntu.com/community/Lubuntu/Keyboard
 
 <hr>
+
 SEARCHING in man pages (press "`h`" when viewing man page for complete help)
 ```
   /pattern          *  Search forward for (N-th) matching line.
