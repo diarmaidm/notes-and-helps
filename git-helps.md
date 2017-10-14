@@ -17,6 +17,7 @@ To push the current branch and set the remote as upstream, use
 
     git push --set-upstream origin master
 ```
+
 Execute the provided command `git push --set-upstream origin master`
 
 It will give an error. Create new remote repository (empty)
@@ -25,7 +26,7 @@ Push the code to github.
 
 <hr>
 
-#### General Notes
+#### Git config
 * https://git-scm.com
 * https://git-scm.com/documentation
 
@@ -37,20 +38,29 @@ Stop warning message `git config --global push.default simple`
 
 Set color git messages `git config --global color.ui auto`
 
+set alias `git config --global alias.st status`
+
+unset alias `git config --global --unset alias.st`
+
 Cache credentials https://help.github.com/articles/caching-your-github-password-in-git/
+
 ```
 git config --global credential.helper cache
 # Set git to use the credential memory cache
 git config --global credential.helper 'cache --timeout=7200'
 # Set the cache to timeout after 2 hours (setting is in seconds)
 ```
+
 <hr>
+
 #### Fork and track a repo
 https://help.github.com/articles/fork-a-repo/
 
 <hr>
+
 #### Configuring a remote for a fork
 https://help.github.com/articles/configuring-a-remote-for-a-fork/ **Summary:**
+
 ```
 git remote -v
     origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
@@ -70,11 +80,13 @@ git remote -v
 ```
 
 <hr>
+
 #### Syncing a fork:
 
 https://help.github.com/articles/syncing-a-fork/
 
 #### undoing changes
+
 https://www.atlassian.com/git/tutorials/undoing-changes/git-clean
 
 #### From github for developers training
@@ -138,6 +150,7 @@ git lol
 git config --global alias.st "status"
 git st
 ```
+
 Create a task list use:
 - [ ] TASKNAME
 
